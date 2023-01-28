@@ -1,6 +1,5 @@
 # danbishop.uk
 
-sudo snap install ruby
-sudo apt intall build-essential
-
+## Setup Ubuntu
+sudo apt install ruby build-essential
 
