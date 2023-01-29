@@ -1,29 +1,18 @@
 ---
 layout: single
-title:  "Welcome to Jekyll!"
-date:   2022-08-10 15:42:08 +0100
-categories: jekyll update
+title:  "Updating Firmware on Zigbee Routers"
+date:   2023-01-24 20:42:08 +0100
+categories: home-automation zha zigbee
+classes: wide
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+I have three zigbee routers that I've used over the years. A now very old Conbee Stick, an Electrolama zig-a-zig-ah! (zzh!) and a SONOFF Zigbee 3.0 USB Dongle Plus ZBDongle-P. I consider the Conbee to be dead. It's not, it works just fine, but my network has far outgrown its capabilities and it exhibits very odd behaviours if I try to connect eberything to it.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+## SONOFF Zigbee 3.0 USB Dongle Plus ZBDongle-P
+Ensure your current user is in the `tty` and `dialout` groups.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+If not, you should run:
+{% highlight bash %}
+usermod -aG tty ${USER}
+usermod -aG dialout ${USER}
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
