@@ -33,7 +33,7 @@ github_username:  danbishop
 locale: "en-GB"
 
 # Build settings
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 breadcrumbs: true
 plugins:
