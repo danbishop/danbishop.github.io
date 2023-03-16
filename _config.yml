@@ -35,7 +35,7 @@ locale: "en-GB"
 # Build settings
 # theme: minimal-mistakes-jekyll
 remote_theme: mmistakes/minimal-mistakes
-breadcrumbs: true
+# breadcrumbs: true
 plugins:
   - jekyll-feed
   - jekyll-include-cache
