@@ -30,7 +30,6 @@ autoinstall:
   storage:
     layout:
       name: lvm
-
   apt:
     disable_components: []
     fallback: offline-install
