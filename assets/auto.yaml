@@ -64,7 +64,6 @@ autoinstall:
     password: $6$UM0qQAMwYUYCuPk2$.TH3kBSamBuuAYbaiIYvGkmb5dHgLPxcLvQDSz8Xhfi6ZF/u/CQUImFSVfARy56UJlKxjLnnyRz0ahRu./mPe/
     realname: Dan Bishop
     username: localadmin
-    hostname: ubuntu-desktop-test
   kernel:
     package: linux-generic-hwe-24.04
   keyboard:
