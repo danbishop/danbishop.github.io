@@ -38,4 +38,4 @@ autoinstall:
   # The 'direct' layout method shown here will produce a non-LVM result.
   storage:
     layout:
-      name: direct
+      name: lvm
