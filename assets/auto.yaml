@@ -39,3 +39,56 @@ autoinstall:
   storage:
     layout:
       name: lvm
+
+  apt:
+    disable_components: []
+    fallback: offline-install
+    geoip: true
+    mirror-selection:
+      primary:
+      - country-mirror
+      - arches: &id001
+        - amd64
+        - i386
+        uri: http://archive.ubuntu.com/ubuntu/
+      - arches: &id002
+        - s390x
+        - arm64
+        - armhf
+        - powerpc
+        - ppc64el
+        - riscv64
+        uri: http://ports.ubuntu.com/ubuntu-ports
+    preserve_sources_list: false
+    security:
+    - arches: *id001
+      uri: http://security.ubuntu.com/ubuntu/
+    - arches: *id002
+      uri: http://ports.ubuntu.com/ubuntu-ports
+  codecs:
+    install: true
+  drivers:
+    install: false
+  identity:
+    hostname: dan-test
+    password: $6$UM0qQAMwYUYCuPk2$.TH3kBSamBuuAYbaiIYvGkmb5dHgLPxcLvQDSz8Xhfi6ZF/u/CQUImFSVfARy56UJlKxjLnnyRz0ahRu./mPe/
+    realname: Dan Bishop
+    username: localadmin
+  kernel:
+    package: linux-generic-hwe-24.04
+  keyboard:
+    layout: gb
+    toggle: null
+    variant: ''
+  locale: en_GB.UTF-8
+  oem:
+    install: auto
+  source:
+    id: ubuntu-desktop-minimal
+    search_drivers: false
+  ssh:
+    allow-pw: false
+    authorized-keys: []
+    install-server: true
+  timezone: Europe/London
+  updates: security
